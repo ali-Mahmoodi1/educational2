@@ -1,0 +1,305 @@
+.background {
+    background: url("../../images/white-gray-geometric-pattern-background-vector_53876-136510.webp");
+    background-size: cover;
+    font-family: "cazabelanka";
+}
+
+.course {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.courseLeft {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courseImg {
+    margin-right: 5rem;
+    box-shadow: #454545 0 0 10px;
+    width: 30rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.infoes {
+    font-weight: 100;
+    letter-spacing: 1px;
+    /* height: 7rem; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.courseTitle {
+    font-family: "lobster";
+    font-size: 3rem;
+}
+
+.coursePrice,
+.courseTime,
+.courseBtn {
+    font-family: "lalezar";
+    font-size: 1.4rem;
+}
+
+.courseBtn {
+    cursor: pointer;
+    width: fit-content;
+    padding: .5rem 2rem;
+    background-color: #373737;
+    border-radius: 2rem;
+    color: #fff;
+    transition: .4s all;
+}
+
+.courseBtn:hover {
+    box-shadow: #000 0 0 5px;
+}
+
+.videoIcon {
+    width: 20%;
+    cursor: pointer;
+}
+
+.videoIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.videoIcon div {
+    border-radius: 50%;
+    border: 2px solid #373737;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoIcon p {
+    text-align: center;
+    font-family: "lobster";
+    font-size: 2rem;
+}
+
+.bottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    direction: rtl;
+}
+
+.bottom__bottom {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wrapperIcons {
+    display: flex;
+    margin: 1rem;
+}
+
+.wrapperIcons div {
+    margin: 0 .2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #373737;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.wrapperIcons img {
+    width: 1.5rem;
+}
+
+.afterBuy {
+    height: fit-content;
+    width: 60%;
+    background-color: #373737;
+    border-bottom: 1px solid #0f0f0f;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    text-align: right;
+    border-top-left-radius: 4rem;
+}
+
+@media (max-width:1200px) {
+    .courseImg {
+        margin-left: 0;
+        width: 25rem;
+        height: 16rem;
+    }
+
+    .videoIcon {
+        width: 15%;
+    }
+
+    .videoIcon div {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    .course {
+        justify-content: space-around;
+    }
+
+    .courseLeft {
+        justify-content: left;
+    }
+
+    .courseImg {
+        margin-right: 2rem;
+        width: 20rem;
+        height: 13rem;
+    }
+
+    .courseTitle {
+        font-size: 2.5rem;
+    }
+
+    .courseBtn {
+        padding: .3rem 1.2rem;
+    }
+
+    .coursePrice,
+    .courseTime,
+    .courseBtn {
+        font-family: "lalezar";
+        font-size: 1rem;
+    }
+
+    .videoIcon p {
+        font-size: 1.3rem;
+    }
+
+    .afterBuy {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:750px) {
+    .course {
+        justify-content: space-between;
+    }
+
+    .description {
+        padding: 0 3rem;
+        font-size: 1.3rem;
+    }
+
+    .courseBtn {
+        padding: .2rem 1rem;
+        font-size: .8rem;
+    }
+
+    .videoIcon div {
+        padding: 1rem;
+    }
+}
+
+@media (max-width:650px) {
+    .course {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .courseLeft {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .courseImg{
+        width: 17rem;
+        height: 10rem;
+    }
+
+    .videoIcon {
+        margin-top: 2rem;
+    }
+
+    .videoIcon div {
+        padding: .5rem;
+    }
+
+    .afterBuy{
+        border-top-left-radius: 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:500px) {
+
+    .course{
+        padding-left: 0;
+    }
+
+    .courseLeft{
+        justify-content: flex-start;
+    }
+
+    .courseTitle{
+        font-size: 1.5rem;
+    }
+
+    .coursePrice,
+    .courseTime,
+    .courseBtn {
+        font-family: "lalezar";
+        font-size: .7rem;
+    }
+
+    .courseImg{
+        width: 13rem;
+        height: 8.5rem;
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    .description{
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .wrapperIcons div{
+        width: 2rem; 
+        height: 2rem;
+    }
+
+    .wrapperIcons img{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .afterBuy{
+        font-size: .7rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:390px) {
+    .courseImg{
+        width: 11rem;
+        height: 7rem;
+        border-radius: 0 2rem 2rem 0;
+        margin-right: 1.2rem;
+    }
+}

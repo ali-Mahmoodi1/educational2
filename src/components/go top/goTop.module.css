@@ -1,0 +1,18 @@
+.GoTop {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fff;
+    background-color: var(--theme-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GoTop img {
+    transform: rotate(-90deg);
+    width: 1.5rem;
+}

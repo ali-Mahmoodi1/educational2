@@ -1,0 +1,26 @@
+.wrapper {
+    width: 10rem;
+    height: 2rem;
+    background-color: #cccccc;
+    border-radius: 2rem;
+    box-shadow: #000 1px 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.loader {
+    border-radius: 3rem;
+    width: 120%;
+    height: 100%;
+    background-color: var(--theme-color);
+    position: absolute;
+    top: 0;
+    left: -120%;
+    animation: animation 1s infinite;
+}
+
+@keyframes animation {
+    to {
+        left: 0;
+    }
+}

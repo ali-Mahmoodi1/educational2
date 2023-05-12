@@ -1,0 +1,19 @@
+.loaderWrapper {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyWrapper {
+    margin-bottom: 2rem;
+    display: none;
+}
+
+#hide {
+    display: none;
+}
+
+#show {
+    display: block;
+}

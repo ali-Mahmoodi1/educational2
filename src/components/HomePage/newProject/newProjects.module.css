@@ -1,0 +1,158 @@
+:root {
+    --theme-color: #2b99ff;
+    --theme-color-2: #ececec;
+    --theme-color-3: #fff;
+    --theme-color-4: #373737;
+    --theme-color-5: #64fa64;
+}
+
+
+.titleImg {
+    display: block;
+    margin: 0 auto;
+}
+
+.titleImg {
+    margin-top: 2rem;
+    width: 30rem;
+}
+
+.titleContainer {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlewrapper {
+    margin: 1rem;
+    width: 35%;
+    height: 1rem;
+    border-radius: 3rem;
+    background-color: var(--theme-color-5);
+}
+
+.title {
+    padding: 0 1rem;
+    width: fit-content;
+    color: var(--theme-color-4);
+    font: 2.5rem "Lalezar";
+    text-align: center;
+}
+
+.newProductsWrapper {
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    height: auto;
+    border-radius: 3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 3rem;
+}
+
+.newProductsWrapper::-webkit-scrollbar-track {
+    margin: 2rem 30rem;
+    background: #d0d0d0;
+    border-radius: 3rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--theme-color);
+    border: 1px solid #000;
+    border-radius: 3rem;
+}
+
+.newProducts {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    width: 120%;
+    display: flex;
+}
+
+@media only screen and (max-width: 1200px) {
+    .newProductsWrapper::-webkit-scrollbar-track {
+        margin: 2rem 20rem;
+
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .newProducts {
+        width: 180%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .titleImg {
+        width: 25rem;
+    }
+
+    .newProducts {
+        width: 220%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    .titlewrapper {
+        height: .7rem;
+        width: 30%;
+    }
+
+    .newProductsWrapper::-webkit-scrollbar-track {
+        margin: 2rem 12rem;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .titleImg {
+        width: 20rem;
+    }
+
+    .newProducts {
+        width: 300%;
+    }
+
+    .title {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .titlewrapper {
+        height: .7rem;
+        width: 25%;
+    }
+
+    ::-webkit-scrollbar {
+        height: 1.2rem;
+    }
+
+    .newProductsWrapper::-webkit-scrollbar-track {
+        margin: 0 10rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .titleImg {
+        width: 15rem;
+    }
+
+    .newProducts {
+        width: 360%;
+    }
+
+    .newProductsWrapper::-webkit-scrollbar-track {
+        margin: 5rem;
+
+    }
+}

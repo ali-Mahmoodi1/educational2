@@ -1,0 +1,245 @@
+:root {
+    --theme-color: #2b99ff;
+    --theme-color-2: #ececec;
+    --theme-color-3: #fff;
+    --theme-color-4: #373737;
+    --theme-color-5: #64fa64;
+}
+
+.header-bottom {
+    background-image: url("../../../images/IMG_1650.JPG");
+    /* background-color: #2dffa0; */
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0 0 10% 10%;
+    height: 48rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.header-bottom .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: inherit;
+}
+
+.header-bottom-title {
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    font: 2.8rem "Lalezar";
+}
+
+.header-bottom__search {
+    padding: 0;
+    background-color: #fff;
+    width: 45rem;
+    height: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+#inputSearch {
+    font-family: "Lalezar";
+    font-size: 1.4rem;
+    direction: rtl;
+    padding: 0.5rem 2rem;
+    color: #000000;
+    width: 80%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+}
+
+.search__btn {
+    background-color: var(--theme-color);
+    width: 20%;
+    height: 100%;
+    border-radius: 0.5rem;
+    outline: 0;
+    border: 0;
+}
+
+.search__icon {
+    width: 30%;
+}
+
+.header-bottom__numbers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-bottom-wrappers {
+    width: 25%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--theme-color-3);
+    background-color: #6363634f;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 1rem;
+}
+
+.header-bottom__wrapper__img img {
+    width: 5rem;
+    height: 5rem;
+    height: auto;
+    border-radius: 0.3rem;
+}
+
+.header-bottom__text {
+    font-size: 2rem;
+    font-family: "cazabelanka";
+    margin: 1.5rem 0 .6rem;
+}
+
+.header-bottom__number {
+    font-size: 2.8rem;
+    font-family: "cazabelanka";
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .header-bottom-title {
+        font: 2.3rem "Lalezar";
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header-bottom {
+        height: 45rem;
+    }
+
+    .header-bottom-title {
+        font: 1.7rem "Lalezar";
+    }
+
+    .header-bottom__search {
+        width: 530px;
+    }
+
+    .header-bottom__numbers {
+        justify-content: space-evenly;
+    }
+
+    .header-bottom-wrappers {
+        margin: .5rem;
+        width: 175px;
+    }
+
+    .header-bottom__text {
+        font-size: 2.2rem;
+        margin: .5rem 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header-bottom {
+        padding: 0 .2rem;
+        width: 100%;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .header-bottom__search {
+        width: 80%;
+        height: 50px;
+    }
+
+    .search__btn {
+        width: 30%;
+    }
+
+    .search__icon {
+        width: 20%;
+    }
+
+    #inputSearch {
+        width: 70%;
+        padding: 0.2rem 1.3rem;
+        font-size: 1.1rem;
+    }
+
+    .header-bottom-wrappers {
+        width: 29%;
+    }
+
+    .header-bottom__wrapper__img img {
+        width: 3.4rem;
+        height: 3.2rem;
+
+    }
+
+    .header-bottom__text {
+        font-size: 1.5rem;
+        margin: .8rem 0;
+    }
+
+    .header-bottom__number {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .header-bottom {
+        height: 32rem;
+    }
+
+    .header-bottom-title {
+        font: 1.25rem "Lalezar";
+    }
+
+    .header-bottom__search {
+        height: 3.2rem;
+    }
+
+    .header-bottom__text {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .header-bottom-title {
+        font: 1rem "Lalezar";
+    }
+
+    .header-bottom {
+        height: 35rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .header-bottom-wrappers {
+        width: 120px;
+        transform: scale(.8);
+    }
+
+    .header-bottom__text {
+        margin: .35rem 0;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .header-bottom-title {
+        font: .7rem "Lalezar";
+    }
+
+    .header-bottom__search {
+        border-radius: .8rem;
+        height: 2.8rem;
+    }
+}

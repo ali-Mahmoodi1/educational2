@@ -1,0 +1,43 @@
+.title{
+    text-align: center;
+    font-family: "lalezar";
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.description{
+    text-align: center;
+    font-family: "lalezar";
+    font-weight: 100;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.btn{
+    transition: all .3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 2rem;
+    margin: .0 .5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #8d50ff;
+    box-shadow: 0 0 5px rgb(62 62 62);
+}
+
+.aLink{
+    color: #fff;
+    text-decoration: none;
+}
+
+.image{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+}
